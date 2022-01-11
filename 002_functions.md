@@ -5,6 +5,14 @@
 1. Given a and b, your function should return the value of a<sup>b</sup>  
 **Example:**  
 **Input:** `power(2,3)` ––> **Output:** `8`
+
+    ```js
+    const findExp = (base,power) => {
+        if((base??power) === base)power = 1;
+        return Math.pow(base,power)
+    }
+    console.log(findExp(2))
+    ```
 1. Given length of a regular hexagon, your function should return area of the hexagon.  
 **Example:**  
 **Input:** `areaOfHexagon(10)` ––> **Output:** `259.80`
